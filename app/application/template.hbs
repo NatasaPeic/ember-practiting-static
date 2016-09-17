@@ -4,7 +4,14 @@
   {{#link-to 'application'}}Home{{/link-to}}
   {{#link-to 'about'}}About{{/link-to}}
   {{#link-to 'team'}}Team{{/link-to}}
+
   {{#link-to 'contact'}}Contact{{/link-to}}
+</nav>
+
+<nav>
+  <h3>We can also link nested templates</h3>
+  <h4>It will render parent template 'team' since parent template holds nested templates.</h4>
+    {{#link-to 'team.leadership'}}Leadership{{/link-to}}
 </nav>
 
 {{outlet}}
